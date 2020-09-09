@@ -119,7 +119,7 @@ function moveEnemy(){
   enemy.forEach(function(item){
     item.y += setting.speed / 2;
     item.style.top = item.y + 'px';
-    if (item.y >= document.documentElement.clientHeilght){
+    if (item.y >= document.documentElement.clientHeight){
       item.y = -100 * setting.traffic;
       item.style.left = Math.floor(Math.random() * (gameArea.offsetWidth - 50)) + 'px';
     }
